@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+.picker-choose {
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}
+.react-body {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr 4fr 1fr ;
+  justify-items: center;
+  align-items: center;
+}
+.cnt-box {
+  background-color: pink;
+}
+.sides {
+  background-color: aqua;
+}

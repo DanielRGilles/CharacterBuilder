@@ -10,7 +10,6 @@ function App() {
  const [ head, setHead ] = useState('circle')
  const [ middle, setMiddle ] = useState('circle')
  const [ leg, setLegs ] = useState('circle')
- const [ feet, setFeet ] = useState('circle')
  const [ newPhrase, setPhrase ] = useState('circle')
  const [ phrases, setPhrases ] = useState([])
 
@@ -21,10 +20,17 @@ function App() {
 
 
   return (
-    <>
+    <div className='react-body'>
+      <section className='sides'>left</section>
+      <section className='cnt-box'>
+      <h1>Character Builder </h1>
+      <Picker  {... { head, middle, leg, setHead,  setLegs, setMiddle, setPhrase, handleClick } }/>
+      <Character {... { head, middle, leg }}/>
+      <Display phrases={phrases} />
+      </section>
+      <section className='sides'>right</section>
 
-
-    </>
+    </div>
   );
 }
 
