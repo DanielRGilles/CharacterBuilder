@@ -1,9 +1,9 @@
 import React from 'react'
 
 export default function Picker({head, middle, leg, setHead,  setLegs, setMiddle, setPhrase, handleClick}) {
-    const headPics = [1, 2, 3];
-    const middlePics = ['a', 'b', 'c'];
-    const legPics = ['a', 'b', 'c'];
+    const headPics = ['fox', 'giraffee', 'eagle'];
+    const middlePics = ['baby', 'pizza', 'wings'];
+    const legPics = ['centaur', 'bones', 'fish'];
     return (
         <div className='picker-choose'>
             <label>

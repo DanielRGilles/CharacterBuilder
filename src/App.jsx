@@ -7,10 +7,10 @@ import Picker from './components/Picker/Picker';
 
 function App() {
 // state lives here
- const [ head, setHead ] = useState('circle')
- const [ middle, setMiddle ] = useState('circle')
- const [ leg, setLegs ] = useState('circle')
- const [ newPhrase, setPhrase ] = useState('circle')
+ const [ head, setHead ] = useState('giraffee')
+ const [ middle, setMiddle ] = useState('pizza')
+ const [ leg, setLegs ] = useState('fish')
+ const [ newPhrase, setPhrase ] = useState('')
  const [ phrases, setPhrases ] = useState([])
 
  // event handler
