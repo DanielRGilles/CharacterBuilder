@@ -3,7 +3,7 @@ import React from 'react'
 export default function Character({head, middle, leg}) {
     return (
         <section style={{display: 'flex', flexDirection: 'column'}}>
-            <article   style={{
+            <article  aria-label='head' style={{
             backgroundImage: `url(./${head}-head.png)`,
             height: 150,
              width: 150,
@@ -11,7 +11,7 @@ export default function Character({head, middle, leg}) {
              backgroundRepeat: 'no-repeat',
                  }}>
             </article>
-            <article style={{
+            <article aria-label='middle' style={{
           backgroundImage: `url(./${middle}-middle.png)`,
           height: 150,
           width: 150,
@@ -20,7 +20,7 @@ export default function Character({head, middle, leg}) {
                 }}>  
             </article>
 
-            <article style={{
+            <article aria-label='leg' style={{
               backgroundImage: `url(./${leg}-legs.png)`,
               height: 150,
               width: 150,

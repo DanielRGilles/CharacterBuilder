@@ -7,14 +7,14 @@ export default function Picker({head, middle, leg, setHead,  setLegs, setMiddle,
     return (
         <div className='picker-choose'>
             <label>
-                Head
+                head
                 <select value={head} onChange={(e) => setHead(e.target.value)}>
                     {headPics.map((pic) => (<option key={pic}>{pic}</option>
                     ))}
                 </select>
             </label>
             <label>
-                Middle
+                middle
                 <select value={middle} onChange={(e) => setMiddle(e.target.value)}>
                     {middlePics.map((pic) => (<option key={pic}>{pic}</option>
                     ))}
@@ -22,7 +22,7 @@ export default function Picker({head, middle, leg, setHead,  setLegs, setMiddle,
 
             </label>
             <label>
-                Legs
+                legs
                 <select value={leg} onChange={(e) => setLegs(e.target.value)}>
                     {legPics.map((pic) => (<option key={pic}>{pic}</option>
                     ))}
