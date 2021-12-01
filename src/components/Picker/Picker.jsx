@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Picker({head, middle, leg, setHead,  setLegs, setMiddle, setPhrase, handleClick}) {
+export default function Picker({head, middle, leg, setHead,  setLegs, setMiddle, setPhrase, handleClick, newPhrase}) {
     const headPics = ['fox', 'giraffee', 'eagle'];
     const middlePics = ['baby', 'pizza', 'wings'];
     const legPics = ['centaur', 'bones', 'fish'];
@@ -28,6 +28,12 @@ export default function Picker({head, middle, leg, setHead,  setLegs, setMiddle,
                     ))}
                 </select>
 
+            </label>
+            <label>
+                CatchPhrase 
+                <input type='text' value={newPhrase}placeholder='new catch phrase' onChange={(e) => setPhrase(e.target.value)}>
+                </input>
+                <button onClick={handleClick}>Add</button>
             </label>
         </div>
     )

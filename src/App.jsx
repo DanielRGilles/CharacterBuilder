@@ -24,7 +24,7 @@ function App() {
       <section className='sides'>left</section>
       <section className='cnt-box'>
       <h1>Character Builder </h1>
-      <Picker  {... { head, middle, leg, setHead,  setLegs, setMiddle, setPhrase, handleClick } }/>
+      <Picker  {... { head, middle, leg, setHead,  setLegs, setMiddle, setPhrase, newPhrase, handleClick } }/>
       <Character {... { head, middle, leg }}/>
       <Display phrases={phrases} />
       </section>
